@@ -39,5 +39,4 @@ jobs:
           platforms: linux/amd64
           push: true
           build-args: RELEASE_TAG=${{ env.RELEASE_TAG }}
-          labels: service=stage-three
           tags: ghcr.io/${{ github.repository }}:${{ github.ref_name }}
